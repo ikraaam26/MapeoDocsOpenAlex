@@ -1,0 +1,15 @@
+revision: ${buildNumber}
+
+spring.main.banner-mode: 'off'
+
+logging: 
+  file.name: log/${spring.application.name}.log
+  pattern.rolling-file-name: ${LOG_FILE}-%d{yyyy-MM-dd}.%i.log.gz
+  file.max-size: 100MB
+  level:
+    ROOT: INFO
+#    docserver.importador.scopus: DEBUG
+   
+#docserver.mongodb.uri: mongodb://docserver:9EdR7zVP9fmb9fFz@totoro.unirioja.es,totoro2.unirioja.es,matute.unirioja.es, sancho.unirioja.es/docserver?authSource=admin&replicaSet=dialnet-rs
+openalex.mongodb.uri: mongodb://practicas:practicas24@totoro.unirioja.es,totoro2.unirioja.es,matute.unirioja.es, sancho.unirioja.es/practicas?authSource=practicas&replicaSet=dialnet-rs
+docserver.mongodb.uri: mongodb://practicas:practicas24@totoro.unirioja.es,totoro2.unirioja.es,matute.unirioja.es, sancho.unirioja.es/practicas?authSource=practicas&replicaSet=dialnet-rs
